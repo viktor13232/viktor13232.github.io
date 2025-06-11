@@ -1,0 +1,466 @@
+* {
+    box-sizing: content-box;
+}
+
+/*Global*/
+
+a {
+    font-size: 2.5rem;
+    margin: 1rem;
+    font-weight: 600;
+    /*color: rgb(135, 131, 131);*/
+    /*color:rgb(73, 87, 96);*/
+    color: rgb(78, 79, 83);
+
+}
+
+a:hover {
+    color: rgb(96, 55, 19);
+    text-size-adjust: 100%;
+    text-decoration: underline;
+    font-size: 150%;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h4 {
+    font-weight: 350;
+    font-size: 3rem;
+}
+
+/*--Header--*/
+
+/*Top Links*/
+
+.topBackLinksLang {
+    height: 4vh;
+    min-height: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.langDropDown {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.langDropDownBtn {
+    background-color: transparent;
+    border-color: transparent;
+    margin-top: 1rem;
+    
+    font-size: 2rem;
+
+    cursor: pointer;
+}
+
+.button.button-clear.langDropDownBtn {
+    color: rgb(178, 21, 21);
+}
+
+button.button-clear, button.button-clear:hover {
+    color: rgb(78, 79, 83);
+}
+
+
+.langDropContent {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 253, 253, 0.5);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /*z-index: 1;*/
+  text-align: center;
+
+  border-radius: 5px;
+}
+
+.langDropContent>a {
+    color: rgb(235, 229, 226);
+    font-weight: 400;
+    text-shadow: 1px 1.5px black;
+}
+
+.langDropDown:hover .langDropContent {
+  display: block;
+}
+
+.whatsUp::before {
+    content: "";
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    margin-right: 1rem;
+
+
+    background-size: 100%;
+    background-image: url(../img/whatsapp.png);   
+}
+
+.whatsUp::after {
+    content: "|";
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.headNavBarContainer {
+    height: 80vh;
+    min-height: 500px;
+    background-image: url("../img/study_pic.jpg");
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*Hero*/
+
+.headLogo {
+    align-self: center;
+
+    display: flex;
+}
+
+.headLogo>h1 {
+    font-weight: 40;
+    font-style: italic;
+    font-size: 15rem;
+    color: rgba(248, 244, 239, 0.938);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    
+
+    text-shadow: 1px 1.5px black;
+    
+}
+
+.headLogo>h3 {
+    font-size: 4rem;
+    color: rgba(248, 244, 239, 0.938);
+    align-self: flex-end;
+
+    text-shadow: 1px 1.5px black;
+    
+}
+
+/*Head Global*/
+
+.topNavBar {
+    align-self: center;
+    margin-bottom: 7rem;
+}
+
+
+.headNavBarContainer>nav>div{
+    margin-left: 1rem;
+}
+
+.headNavBarContainer>nav>div>a {
+    font-size: 2.5rem;
+}
+
+.headNavBarContainer>nav>a {
+    margin-right: 2rem;
+    font-size: 2.5rem;
+}
+
+.topNavBar>a {
+    color:white;
+    font-weight: 600;
+
+    text-shadow: 1px 1.5px black;
+}
+
+
+/*Main*/
+
+/*Section One*/
+
+.sectionOne {
+    min-width: 800px;
+    width: auto;
+    margin: 2rem;
+    border-top: 1px solid rgb(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+  
+}
+
+.sectionOne>div {
+    min-height: 750px;
+    width: 100%;
+    margin: 2rem;
+    background-color: rgba(231, 220, 205, 0.229);
+    /*background-color: rgba(239, 216, 186, 0.4);
+    background: linear-gradient(to right, rgba(212, 176, 127, 0.5) 50%, white 50%);*/
+    border-radius: 5px;
+}
+
+.secOneGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 50px;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.secOneH3 {
+    align-self: end;
+    justify-self: left;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-left: 2rem;
+    background: linear-gradient(rgba(231, 220, 205, 0) 50%, rgba(212, 176, 127, 0.5) 50%);
+    min-width: 220px;
+}
+
+.secOneH3>h3 {
+    font-weight: 200;
+    font-size: 1.7em;
+    text-shadow: 0.2px 0.3px 0.5px black;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+
+.secOneCourses {
+    min-height: 65vh;
+    width: 40vw;
+    min-width: 305px;
+    margin: 2rem;
+    
+}
+
+
+.secOneCourses>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.secOneCourses>div>h4 {
+    align-self: center;
+
+    margin-top: 1rem;
+    margin-left: 2rem;
+    width: 60%;
+    border-bottom: 1px solid rgb(5, 5, 5, 0.5);
+
+    font-weight: 200;
+    font-style: italic;
+    text-shadow: 0.1px 0.2px 0.1px black;
+    background: linear-gradient(rgba(231, 220, 205, 0) 50%, rgba(212, 176, 127, 0.5) 50%);
+
+}
+
+.secOneCourses>div>ul {
+    margin: 1rem;
+    padding-left: 10rem;
+    font-size: large;
+}
+
+.secOneLangCourses {
+    display: grid;
+    grid-template-columns: 120px 120px;
+    grid-template-rows: 1fr 1fr;
+    justify-content: left;
+}
+
+.secOneApproach {
+
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    padding-bottom: 2rem;
+    min-height: 65vh;
+    min-width: 340px;
+    width: 40vw;
+    background-color: rgba(212, 176, 127, 0.5);
+    border-radius: 5px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.secOneApproach>h4 {
+    align-self: flex-start;
+
+    margin-left: 5rem;
+    width: 60%;
+    border-bottom: 1px solid rgb(5, 5, 5, 0.5);
+
+    font-weight: 300;
+    font-style: italic;
+    text-shadow: 1px black;
+    color: rgb(113, 78, 40);
+}
+
+.secOneApproach>ul {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    color: rgb(113, 78, 40);
+    list-style-type: circle;
+}
+
+.secOneApproach>ul>li {
+    padding: 1rem;
+    font-weight: 300;
+    color: rgb(113, 78, 40);
+    font-size: 1.15em;
+
+   
+}
+
+/*Section Two*/
+
+.sectionTwo {
+    
+    min-height: 700px;
+    display: flex;
+    flex-direction: row;
+
+
+    align-items: center;
+
+}
+
+.sectionTwo>img {
+    height: 85vh;
+    max-width: 40%;
+    min-width: 300px;
+    height: auto;
+
+
+    margin: 2rem;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sectionTwo>div {
+    margin: 1rem;
+    min-width: 500px;
+    border-left: 1px solid rgb(0, 0, 0, 0.3);
+    background: linear-gradient(rgba(231, 220, 205, 0) 50%,rgba(231, 220, 205, 0.229) 50%);
+}
+
+.sectionTwo>div>p {
+    margin: 2rem 4rem 2rem 0;
+    font-size: 1.8rem;
+    padding-left: 2rem;
+    
+
+}
+
+/*Apply Section*/
+    .applySection {
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient(rgba(231, 220, 205, 0.229) 50%, rgba(231, 220, 205, 0) 50%);
+        margin: 4rem;
+
+        align-items: center;
+        justify-content: center;
+
+    }
+
+ 
+    .applySection>div>h3 {
+        font-weight: 200;
+        font-size: 1.7em;
+        text-shadow: 0.2px 0.3px 0.5px black;
+        line-height: 1.8;
+        background: linear-gradient(rgba(231, 220, 205, 0) 50%, rgba(212, 176, 127, 0.5) 50%);
+        
+        margin-left: 5rem;
+        margin-right: 5rem;
+
+        text-align: center;
+    }
+
+    .applySection>div {
+        list-style: none;
+        padding: 3.14rem;
+    }
+
+    .applySectionTextHighlite {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .applySection>div>ol li:last-child {
+        font-weight: bold;
+    }
+
+   .applySection>div>p {
+    font-weight: 800;
+    font-size: 1.4em;
+    margin-top: 1rem;
+   }
+
+    .applySectionAchor {
+        font-size: 1.2em;
+        text-decoration: underline;
+        margin: 0;
+    }
+
+    .applySectionImgDiv {
+        margin-top: 2rem;
+        min-width: 350px;
+        max-height: 600px;
+        height: auto;
+        width: 90%;
+    }
+
+    .applySection>div>img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        margin-bottom: -1rem;
+        border-radius: 5px;
+    }
+
+
+
+/*Footer*/
+
+.footer {
+    min-height: 70px;
+    margin-top: 2rem;
+    background-color: rgba(212, 176, 127, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerAnchor::before, .footerAnchor::after {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+
+    background-size: 100%;
+    background-image: url(../img/up-arrow.png);   
+}
